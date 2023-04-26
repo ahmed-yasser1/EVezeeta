@@ -1,0 +1,14 @@
+C:\dev\Vezeeta\Vezeeta\bin\Debug\Vezeeta.exe.config
+C:\dev\Vezeeta\Vezeeta\bin\Debug\Vezeeta.exe
+C:\dev\Vezeeta\Vezeeta\bin\Debug\Vezeeta.pdb
+C:\dev\Vezeeta\Vezeeta\obj\Debug\Vezeeta.csproj.AssemblyReference.cache
+C:\dev\Vezeeta\Vezeeta\obj\Debug\Vezeeta.csproj.SuggestedBindingRedirects.cache
+C:\dev\Vezeeta\Vezeeta\obj\Debug\Vezeeta.Form1.resources
+C:\dev\Vezeeta\Vezeeta\obj\Debug\Vezeeta.Properties.Resources.resources
+C:\dev\Vezeeta\Vezeeta\obj\Debug\Vezeeta.csproj.GenerateResource.cache
+C:\dev\Vezeeta\Vezeeta\obj\Debug\Vezeeta.csproj.CoreCompileInputs.cache
+C:\dev\Vezeeta\Vezeeta\obj\Debug\Vezeeta.exe
+C:\dev\Vezeeta\Vezeeta\obj\Debug\Vezeeta.pdb
+C:\dev\Vezeeta\Vezeeta\bin\Debug\Oracle.DataAccess.dll
+C:\dev\Vezeeta\Vezeeta\obj\Debug\Vezeeta.Form2.resources
+C:\dev\Vezeeta\Vezeeta\obj\Debug\Vezeeta.csproj.CopyComplete
