@@ -14,7 +14,7 @@ namespace Vezeeta
     public partial class GetPriceform : Form
     {
 
-        string ordb = "Data source=orcl;User Id=scott; Password=tiger;"; 
+        string ordb = "Data source=orcl;User Id=hr; Password=hr;"; 
         OracleConnection conn;
         public GetPriceform()
         {
@@ -50,6 +50,12 @@ namespace Vezeeta
         private void GetPriceform_FormClosing(object sender, FormClosingEventArgs e)
         {
             conn.Dispose();
+        }
+
+        private void btn3_Click(object sender, EventArgs e)
+        {
+            MainForm.instance.Show();
+            this.Close();
         }
     }
 }

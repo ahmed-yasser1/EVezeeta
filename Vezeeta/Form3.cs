@@ -14,7 +14,7 @@ namespace Vezeeta
 {
     public partial class Form3 : Form
     {
-        string ordb = "Data source=orcl;User Id=scott;Password=tiger;"; 
+        string ordb = "Data source=orcl;User Id=hr;Password=hr;"; 
         OracleConnection conn;
         public Form3()
         {
@@ -28,7 +28,7 @@ namespace Vezeeta
             cmd.Connection = conn;
             cmd.CommandText = "select booking_date from appointments ap,doctor d where d.user_name=:doc_name and d.doctor_id= ap.doctor_id and booking_date >= Sysdate";
             cmd.Parameters.Add("doc_name", Doc_name.Text);
-            //cmd.Parameters.Add("dateTime", OracleDbType.TimeStamp).Value = DateTime.Now;
+            cmd.Parameters.Add("dateTime", OracleDbType.TimeStamp).Value = DateTime.Now;
 
             try
             {
@@ -64,7 +64,14 @@ namespace Vezeeta
 
         private void Form3_FormClosing(object sender, FormClosingEventArgs e)
         {
-            conn.Dispose();
+            //conn.Dispose();
+            //MainForm.instance.Close();
+        }
+
+        private void btn3_Click(object sender, EventArgs e)
+        {
+            MainForm.instance.Show();
+            this.Close();
         }
     }
 }

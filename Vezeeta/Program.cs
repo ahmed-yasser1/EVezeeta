@@ -19,7 +19,7 @@ namespace Vezeeta
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new ReviewsForm());
+            Application.Run(new MainForm());
         }
     }
 }

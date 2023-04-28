@@ -16,6 +16,7 @@ namespace Vezeeta
     {
         OracleDataAdapter adapter;
         OracleCommandBuilder builder;
+
    
         public Form1()
         {
@@ -81,6 +82,12 @@ namespace Vezeeta
             Form2 form2 = new Form2();
             this.Hide();
             form2.Show();
+        }
+
+        private void btn3_Click(object sender, EventArgs e)
+        {
+            MainForm.instance.Show();
+            this.Close();
         }
     }
 }

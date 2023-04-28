@@ -112,6 +112,7 @@
             this.btn3.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btn3.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             this.btn3.UseVisualStyleBackColor = false;
+            this.btn3.Click += new System.EventHandler(this.btn3_Click);
             // 
             // btn4
             // 
