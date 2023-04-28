@@ -39,36 +39,40 @@ namespace Vezeeta
             // 
             // Doc_name
             // 
-            this.Doc_name.Location = new System.Drawing.Point(382, 73);
+            this.Doc_name.Location = new System.Drawing.Point(509, 90);
+            this.Doc_name.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Doc_name.Name = "Doc_name";
-            this.Doc_name.Size = new System.Drawing.Size(100, 20);
+            this.Doc_name.Size = new System.Drawing.Size(132, 22);
             this.Doc_name.TabIndex = 0;
-            this.Doc_name.TextChanged += new System.EventHandler(this.Doc_name_TextChanged);
+            
             // 
             // dataGridView1
             // 
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(199, 207);
+            this.dataGridView1.Location = new System.Drawing.Point(265, 255);
+            this.dataGridView1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(390, 146);
+            this.dataGridView1.RowHeadersWidth = 51;
+            this.dataGridView1.Size = new System.Drawing.Size(520, 180);
             this.dataGridView1.TabIndex = 2;
-            this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
-            // 
+            
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(359, 24);
+            this.label1.Location = new System.Drawing.Point(479, 30);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(106, 13);
+            this.label1.Size = new System.Drawing.Size(140, 17);
             this.label1.TabIndex = 3;
             this.label1.Text = "Doctor Appointments";
-            this.label1.Click += new System.EventHandler(this.label1_Click);
+            
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(319, 126);
+            this.button2.Location = new System.Drawing.Point(425, 155);
+            this.button2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(163, 23);
+            this.button2.Size = new System.Drawing.Size(217, 28);
             this.button2.TabIndex = 4;
             this.button2.Text = "Load  Appointments";
             this.button2.UseVisualStyleBackColor = true;
@@ -77,25 +81,29 @@ namespace Vezeeta
             // D_label
             // 
             this.D_label.AutoSize = true;
-            this.D_label.Location = new System.Drawing.Point(296, 80);
+            this.D_label.Location = new System.Drawing.Point(395, 98);
+            this.D_label.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.D_label.Name = "D_label";
-            this.D_label.Size = new System.Drawing.Size(70, 13);
+            this.D_label.Size = new System.Drawing.Size(91, 17);
             this.D_label.TabIndex = 5;
             this.D_label.Text = "Doctor Name";
-            this.D_label.Click += new System.EventHandler(this.label2_Click);
+            
             // 
             // Form3
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(1067, 554);
             this.Controls.Add(this.D_label);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.Doc_name);
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "Form3";
             this.Text = "Form3";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Form3_FormClosing);
+            this.Load += new System.EventHandler(this.Form3_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

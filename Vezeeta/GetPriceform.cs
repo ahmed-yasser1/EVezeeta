@@ -41,9 +41,15 @@ namespace Vezeeta
             }
         }
 
-        private void textBox1_TextChanged(object sender, EventArgs e)
+        private void GetPriceform_Load(object sender, EventArgs e)
         {
+            conn = new OracleConnection(ordb);
+            conn.Open();
+        }
 
+        private void GetPriceform_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            conn.Dispose();
         }
     }
 }

@@ -7,28 +7,41 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using Oracle.DataAccess.Types;
 using Oracle.DataAccess.Client;
-
+using Oracle.DataAccess.Types;
 namespace Vezeeta
 {
-    public partial class Form3 : Form
+    public partial class ReviewsForm : Form
     {
-        string ordb = "Data source=orcl;User Id=scott;Password=tiger;"; 
+        string ordb = "Data Source=ORCL;User Id=scott;Password=tiger";
         OracleConnection conn;
-        public Form3()
+        public ReviewsForm()
         {
             InitializeComponent();
         }
 
-
-        private void button2_Click(object sender, EventArgs e)
+        private void ReviewsForm_Load(object sender, EventArgs e)
         {
+            conn = new OracleConnection(ordb);
+            conn.Open();
+        }
+
+    
+        private void ReviewsForm_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            conn.Dispose();
+        }
+
+        private void show_review_btn_Click(object sender, EventArgs e)
+        {
+
             OracleCommand cmd = new OracleCommand();
             cmd.Connection = conn;
-            cmd.CommandText = "select booking_date from appointments ap,doctor d where d.user_name=:doc_name and d.doctor_id= ap.doctor_id and booking_date >= Sysdate";
-            cmd.Parameters.Add("doc_name", Doc_name.Text);
-            //cmd.Parameters.Add("dateTime", OracleDbType.TimeStamp).Value = DateTime.Now;
+            cmd.CommandText = "GetReviews";
+            cmd.CommandType = CommandType.StoredProcedure;
+            cmd.Parameters.Add("Doc_name", DoctorName.Text);
+            cmd.Parameters.Add("C_Reviews", OracleDbType.RefCursor, ParameterDirection.Output);
+
 
             try
             {
@@ -39,10 +52,10 @@ namespace Vezeeta
                 dt.Load(dr);
 
                 // Set the DataTable as the data source for the DataGridView
-                dataGridView1.DataSource = dt;
+                Reviews.DataSource = dt;
 
                 // Bind the data to the DataGridView
-                dataGridView1.Refresh();
+                Reviews.Refresh();
 
 
             }
@@ -52,19 +65,9 @@ namespace Vezeeta
                 MessageBox.Show(ex.ToString());
 
             }
+
         }
 
-   
 
-        private void Form3_Load(object sender, EventArgs e)
-        {
-            conn = new OracleConnection(ordb);
-            conn.Open();
-        }
-
-        private void Form3_FormClosing(object sender, FormClosingEventArgs e)
-        {
-            conn.Dispose();
-        }
     }
 }

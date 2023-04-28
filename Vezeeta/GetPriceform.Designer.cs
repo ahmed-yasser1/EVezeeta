@@ -41,7 +41,7 @@
             this.label1.AutoSize = true;
             this.label1.Location = new System.Drawing.Point(338, 30);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(130, 16);
+            this.label1.Size = new System.Drawing.Size(138, 17);
             this.label1.TabIndex = 0;
             this.label1.Text = "Get medicines Price ";
             // 
@@ -50,7 +50,7 @@
             this.label2.AutoSize = true;
             this.label2.Location = new System.Drawing.Point(198, 100);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(102, 16);
+            this.label2.Size = new System.Drawing.Size(107, 17);
             this.label2.TabIndex = 1;
             this.label2.Text = "Medicine name ";
             // 
@@ -59,7 +59,7 @@
             this.label3.AutoSize = true;
             this.label3.Location = new System.Drawing.Point(201, 159);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(37, 16);
+            this.label3.Size = new System.Drawing.Size(39, 17);
             this.label3.TabIndex = 2;
             this.label3.Text = "price";
             // 
@@ -69,7 +69,6 @@
             this.Medicine.Name = "Medicine";
             this.Medicine.Size = new System.Drawing.Size(100, 22);
             this.Medicine.TabIndex = 3;
-            this.Medicine.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
             // MedPrice
             // 
@@ -101,6 +100,8 @@
             this.Controls.Add(this.label1);
             this.Name = "GetPriceform";
             this.Text = "GetPriceform";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.GetPriceform_FormClosing);
+            this.Load += new System.EventHandler(this.GetPriceform_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

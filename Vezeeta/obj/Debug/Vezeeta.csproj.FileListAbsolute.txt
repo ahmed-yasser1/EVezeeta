@@ -12,3 +12,17 @@ C:\dev\Vezeeta\Vezeeta\obj\Debug\Vezeeta.pdb
 C:\dev\Vezeeta\Vezeeta\bin\Debug\Oracle.DataAccess.dll
 C:\dev\Vezeeta\Vezeeta\obj\Debug\Vezeeta.Form2.resources
 C:\dev\Vezeeta\Vezeeta\obj\Debug\Vezeeta.csproj.CopyComplete
+D:\FCIS\EVezeeta\Vezeeta\bin\Debug\Vezeeta.exe.config
+D:\FCIS\EVezeeta\Vezeeta\bin\Debug\Vezeeta.exe
+D:\FCIS\EVezeeta\Vezeeta\bin\Debug\Vezeeta.pdb
+D:\FCIS\EVezeeta\Vezeeta\obj\Debug\Vezeeta.csproj.AssemblyReference.cache
+D:\FCIS\EVezeeta\Vezeeta\obj\Debug\Vezeeta.Form1.resources
+D:\FCIS\EVezeeta\Vezeeta\obj\Debug\Vezeeta.Form2.resources
+D:\FCIS\EVezeeta\Vezeeta\obj\Debug\Vezeeta.Form3.resources
+D:\FCIS\EVezeeta\Vezeeta\obj\Debug\Vezeeta.GetPriceform.resources
+D:\FCIS\EVezeeta\Vezeeta\obj\Debug\Vezeeta.Properties.Resources.resources
+D:\FCIS\EVezeeta\Vezeeta\obj\Debug\Vezeeta.csproj.GenerateResource.cache
+D:\FCIS\EVezeeta\Vezeeta\obj\Debug\Vezeeta.csproj.CoreCompileInputs.cache
+D:\FCIS\EVezeeta\Vezeeta\obj\Debug\Vezeeta.exe
+D:\FCIS\EVezeeta\Vezeeta\obj\Debug\Vezeeta.pdb
+D:\FCIS\EVezeeta\Vezeeta\obj\Debug\Vezeeta.ReviewsForm.resources
