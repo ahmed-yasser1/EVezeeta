@@ -49,6 +49,7 @@
             this.label1.Size = new System.Drawing.Size(356, 33);
             this.label1.TabIndex = 18;
             this.label1.Text = "Update Doctor Information";
+            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // btn1
             // 
