@@ -72,5 +72,19 @@ namespace Vezeeta
             getPriceform.Show();
             instance.Hide();
         }
+
+        private void Med_Report_Click(object sender, EventArgs e)
+        {
+            medicineReportForm medform = new medicineReportForm();
+            medform.Show();
+            instance.Hide();
+        }
+
+        private void Phy_Report_Click(object sender, EventArgs e)
+        {
+            Form4 phform = new Form4();
+            phform.Show();
+            instance.Hide();
+        }
     }
 }

@@ -10,27 +10,25 @@ using System.Windows.Forms;
 
 namespace Vezeeta
 {
-    public partial class medicineReportForm : Form
+    public partial class Form4 : Form
     {
-        MedicineReport CR;
-
-        public medicineReportForm()
+        CrystalReport1 CRV;
+        public Form4()
         {
             InitializeComponent();
         }
 
-        private void crystalReportViewer1_Load(object sender, EventArgs e)
+        private void CR_VIWER_Load(object sender, EventArgs e)
         {
-            CR = new MedicineReport();
-
+            CRV = new CrystalReport1();
         }
 
-        private void Generate_report_Click(object sender, EventArgs e)
+        private void button1_Click(object sender, EventArgs e)
         {
-            crystalReportViewer1.ReportSource = CR;
+            CR_VIWER.ReportSource = CRV;
         }
 
-        private void back_BTNNN_Click(object sender, EventArgs e)
+        private void backBtn_Click(object sender, EventArgs e)
         {
             MainForm.instance.Show();
             this.Close();

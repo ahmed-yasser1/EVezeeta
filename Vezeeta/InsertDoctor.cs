@@ -25,7 +25,16 @@ namespace Vezeeta
 
         private void Form2_Load(object sender, EventArgs e)
         {
-       
+            conn = new OracleConnection(ordb);
+            conn.Open();
+            OracleCommand cmd = new OracleCommand();
+            cmd.Connection = conn;
+            cmd.CommandText = "SELECT COUNT(*) FROM DOCTOR";
+            cmd.CommandType = CommandType.Text;
+            OracleDataReader dr = cmd.ExecuteReader();
+            if (dr.Read())
+                docID += Int32.Parse(dr[0].ToString());
+            dr.Close();
         }
 
         private void Form2_FormClosing(object sender, FormClosingEventArgs e)

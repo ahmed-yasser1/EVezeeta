@@ -35,13 +35,17 @@ namespace Vezeeta
             this.button4 = new System.Windows.Forms.Button();
             this.button5 = new System.Windows.Forms.Button();
             this.button6 = new System.Windows.Forms.Button();
+            this.Med_Report = new System.Windows.Forms.Button();
+            this.Phy_Report = new System.Windows.Forms.Button();
+            this.label1 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(333, 12);
+            this.button1.Location = new System.Drawing.Point(134, 257);
+            this.button1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(165, 41);
+            this.button1.Size = new System.Drawing.Size(220, 50);
             this.button1.TabIndex = 2;
             this.button1.Text = "Insert Doctor";
             this.button1.UseVisualStyleBackColor = true;
@@ -49,9 +53,10 @@ namespace Vezeeta
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(333, 59);
+            this.button2.Location = new System.Drawing.Point(134, 169);
+            this.button2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(165, 41);
+            this.button2.Size = new System.Drawing.Size(220, 50);
             this.button2.TabIndex = 3;
             this.button2.Text = "Insert Patient";
             this.button2.UseVisualStyleBackColor = true;
@@ -59,9 +64,10 @@ namespace Vezeeta
             // 
             // button3
             // 
-            this.button3.Location = new System.Drawing.Point(333, 106);
+            this.button3.Location = new System.Drawing.Point(756, 169);
+            this.button3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(165, 41);
+            this.button3.Size = new System.Drawing.Size(220, 50);
             this.button3.TabIndex = 4;
             this.button3.Text = "Search For a Doctor";
             this.button3.UseVisualStyleBackColor = true;
@@ -69,9 +75,10 @@ namespace Vezeeta
             // 
             // button4
             // 
-            this.button4.Location = new System.Drawing.Point(333, 153);
+            this.button4.Location = new System.Drawing.Point(661, 394);
+            this.button4.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(165, 41);
+            this.button4.Size = new System.Drawing.Size(220, 50);
             this.button4.TabIndex = 5;
             this.button4.Text = "Show Reviews";
             this.button4.UseVisualStyleBackColor = true;
@@ -79,9 +86,10 @@ namespace Vezeeta
             // 
             // button5
             // 
-            this.button5.Location = new System.Drawing.Point(333, 200);
+            this.button5.Location = new System.Drawing.Point(245, 394);
+            this.button5.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(165, 41);
+            this.button5.Size = new System.Drawing.Size(220, 50);
             this.button5.TabIndex = 6;
             this.button5.Text = "Show Appointments";
             this.button5.UseVisualStyleBackColor = true;
@@ -89,30 +97,66 @@ namespace Vezeeta
             // 
             // button6
             // 
-            this.button6.Location = new System.Drawing.Point(333, 247);
+            this.button6.Location = new System.Drawing.Point(756, 257);
+            this.button6.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(165, 41);
+            this.button6.Size = new System.Drawing.Size(220, 50);
             this.button6.TabIndex = 7;
             this.button6.Text = "Medicine Price";
             this.button6.UseVisualStyleBackColor = true;
             this.button6.Click += new System.EventHandler(this.button6_Click);
             // 
+            // Med_Report
+            // 
+            this.Med_Report.Location = new System.Drawing.Point(444, 169);
+            this.Med_Report.Name = "Med_Report";
+            this.Med_Report.Size = new System.Drawing.Size(220, 47);
+            this.Med_Report.TabIndex = 8;
+            this.Med_Report.Text = "Medicine Report";
+            this.Med_Report.UseVisualStyleBackColor = true;
+            this.Med_Report.Click += new System.EventHandler(this.Med_Report_Click);
+            // 
+            // Phy_Report
+            // 
+            this.Phy_Report.Location = new System.Drawing.Point(444, 260);
+            this.Phy_Report.Name = "Phy_Report";
+            this.Phy_Report.Size = new System.Drawing.Size(220, 47);
+            this.Phy_Report.TabIndex = 9;
+            this.Phy_Report.Text = "Phmarcy Report";
+            this.Phy_Report.UseVisualStyleBackColor = true;
+            this.Phy_Report.Click += new System.EventHandler(this.Phy_Report_Click);
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(395, 38);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(311, 69);
+            this.label1.TabIndex = 10;
+            this.label1.Text = "VEZEETA";
+            // 
             // MainForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(1067, 554);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.Phy_Report);
+            this.Controls.Add(this.Med_Report);
             this.Controls.Add(this.button6);
             this.Controls.Add(this.button5);
             this.Controls.Add(this.button4);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "MainForm";
             this.Text = "Main Form";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Form1_FormClosing);
             this.Load += new System.EventHandler(this.Form1_Load);
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -123,6 +167,9 @@ namespace Vezeeta
         private System.Windows.Forms.Button button4;
         private System.Windows.Forms.Button button5;
         private System.Windows.Forms.Button button6;
+        private System.Windows.Forms.Button Med_Report;
+        private System.Windows.Forms.Button Phy_Report;
+        private System.Windows.Forms.Label label1;
     }
 }
 
