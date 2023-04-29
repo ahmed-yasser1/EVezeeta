@@ -25,7 +25,7 @@ namespace Vezeeta
 
         private void Form2_Load(object sender, EventArgs e)
         {
-            
+            //nthng
         }
 
         private void Form2_FormClosing(object sender, FormClosingEventArgs e)
