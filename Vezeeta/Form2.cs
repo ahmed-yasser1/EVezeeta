@@ -35,7 +35,7 @@ namespace Vezeeta
         private void btn2_Click(object sender, EventArgs e)
         {
 
-            string connStr = "Data Source=orcl; User Id=hr;Password=hr";
+            string connStr = "Data Source=orcl; User Id=scott;Password=tiger";
             string cmdStr = "select * from doctor where doctor_id  =:id";
 
             adapter = new OracleDataAdapter(cmdStr, connStr);

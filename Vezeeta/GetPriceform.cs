@@ -14,7 +14,7 @@ namespace Vezeeta
     public partial class GetPriceform : Form
     {
 
-        string ordb = "Data source=orcl;User Id=hr; Password=hr;"; 
+        string ordb = "Data source=orcl;User Id=scott; Password=tiger;"; 
         OracleConnection conn;
         public GetPriceform()
         {

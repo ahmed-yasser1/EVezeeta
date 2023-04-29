@@ -13,7 +13,7 @@ namespace Vezeeta
 {
     public partial class ReviewsForm : Form
     {
-        string ordb = "Data Source=ORCL;User Id=hr;Password=hr";
+        string ordb = "Data Source=ORCL;User Id=scott;Password=tiger";
         OracleConnection conn;
         public ReviewsForm()
         {
@@ -72,6 +72,11 @@ namespace Vezeeta
         {
             MainForm.instance.Show();
             this.Close();
+        }
+
+        private void Reviews_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
         }
     }
 }

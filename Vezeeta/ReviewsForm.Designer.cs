@@ -40,10 +40,10 @@ namespace Vezeeta
             // 
             // show_review_btn
             // 
-            this.show_review_btn.Location = new System.Drawing.Point(230, 295);
-            this.show_review_btn.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.show_review_btn.Location = new System.Drawing.Point(307, 363);
+            this.show_review_btn.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.show_review_btn.Name = "show_review_btn";
-            this.show_review_btn.Size = new System.Drawing.Size(96, 34);
+            this.show_review_btn.Size = new System.Drawing.Size(128, 42);
             this.show_review_btn.TabIndex = 0;
             this.show_review_btn.Text = "Get Reviews";
             this.show_review_btn.UseVisualStyleBackColor = true;
@@ -51,32 +51,32 @@ namespace Vezeeta
             // 
             // DoctorName
             // 
-            this.DoctorName.Location = new System.Drawing.Point(172, 84);
-            this.DoctorName.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.DoctorName.Location = new System.Drawing.Point(229, 103);
+            this.DoctorName.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.DoctorName.Name = "DoctorName";
-            this.DoctorName.Size = new System.Drawing.Size(213, 20);
+            this.DoctorName.Size = new System.Drawing.Size(283, 22);
             this.DoctorName.TabIndex = 1;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(170, 67);
-            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label1.Location = new System.Drawing.Point(227, 82);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(77, 13);
+            this.label1.Size = new System.Drawing.Size(101, 17);
             this.label1.TabIndex = 2;
             this.label1.Text = "Doctor\'s Name";
             // 
             // Reviews
             // 
             this.Reviews.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.Reviews.Location = new System.Drawing.Point(172, 106);
-            this.Reviews.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Reviews.Location = new System.Drawing.Point(229, 130);
+            this.Reviews.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Reviews.Name = "Reviews";
             this.Reviews.RowHeadersWidth = 51;
             this.Reviews.RowTemplate.Height = 24;
-            this.Reviews.Size = new System.Drawing.Size(212, 140);
+            this.Reviews.Size = new System.Drawing.Size(283, 172);
             this.Reviews.TabIndex = 3;
+            this.Reviews.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.Reviews_CellContentClick);
             // 
             // btn3
             // 
@@ -89,9 +89,10 @@ namespace Vezeeta
             this.btn3.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(216)))), ((int)(((byte)(222)))), ((int)(((byte)(233)))));
             this.btn3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn3.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn3.Location = new System.Drawing.Point(12, 12);
+            this.btn3.Location = new System.Drawing.Point(16, 15);
+            this.btn3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btn3.Name = "btn3";
-            this.btn3.Size = new System.Drawing.Size(45, 31);
+            this.btn3.Size = new System.Drawing.Size(60, 38);
             this.btn3.TabIndex = 29;
             this.btn3.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btn3.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
@@ -100,15 +101,15 @@ namespace Vezeeta
             // 
             // ReviewsForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(600, 366);
+            this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.btn3);
             this.Controls.Add(this.Reviews);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.DoctorName);
             this.Controls.Add(this.show_review_btn);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "ReviewsForm";
             this.Text = "ReviewsForm";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.ReviewsForm_FormClosing);

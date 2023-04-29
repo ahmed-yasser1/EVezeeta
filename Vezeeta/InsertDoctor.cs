@@ -13,10 +13,10 @@ namespace Vezeeta
 {
     public partial class InsertDoctor : Form
     {
-        string ordb = "Data Source=ORCL;User Id=hr;Password=hr;";
+        string ordb = "Data Source=ORCL;User Id=scott;Password=tiger;";
         OracleConnection conn;
         public static InsertDoctor instance;
-        public static int docID = 2;
+        public static int docID = 6;
         public InsertDoctor()
         {
             InitializeComponent();
@@ -25,7 +25,7 @@ namespace Vezeeta
 
         private void Form2_Load(object sender, EventArgs e)
         {
-            //nthng
+       
         }
 
         private void Form2_FormClosing(object sender, FormClosingEventArgs e)
@@ -36,6 +36,25 @@ namespace Vezeeta
 
         private void button1_Click(object sender, EventArgs e)
         {
+
+            //OracleCommand cr = new OracleCommand();
+            //cr.Connection = conn;
+            //cr.CommandText = "getCount";
+            //cr.CommandType = CommandType.StoredProcedure;
+
+            //cr.Parameters.Add("cntDoc", OracleDbType.Int32, ParameterDirection.Output);
+
+            //try
+            //{
+            //    cr.ExecuteNonQuery();
+            //    docID = (int)cr.Parameters["cntDoc"].Value + 1;
+            //}
+            //catch
+            //{
+            //    docID++;
+            //}
+
+
             conn = new OracleConnection(ordb);
             conn.Open();
             OracleCommand cmd = new OracleCommand();

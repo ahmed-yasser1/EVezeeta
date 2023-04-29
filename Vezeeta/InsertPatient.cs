@@ -14,10 +14,10 @@ namespace Vezeeta
 {
     public partial class InsertPatient : Form
     {
-        string ordb = "Data Source=ORCL;User Id=hr;Password=hr;";
+        string ordb = "Data Source=ORCL;User Id=scott;Password=tiger;";
         OracleConnection conn;
         public static InsertPatient instance;
-        public static int patID = 2;
+        public static int patID = 3;
         public InsertPatient()
         {
             InitializeComponent();

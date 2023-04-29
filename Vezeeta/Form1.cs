@@ -1,4 +1,4 @@
-﻿using Oracle.DataAccess.Client;
+﻿
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -9,7 +9,8 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement;
-
+using Oracle.DataAccess.Client;
+using Oracle.DataAccess.Types;
 namespace Vezeeta
 {
     public partial class Form1 : Form
@@ -33,8 +34,8 @@ namespace Vezeeta
 
 
 
-            string connection_str = "Data Source=orcl; User Id=hr;Password=hr";
-            string command_str = "select speciality from doctor";
+            string connection_str = "Data Source=orcl; User Id=scott;Password=tiger";
+            string command_str = "select SPECIALIST from doctor";
 
             adapter = new OracleDataAdapter(command_str, connection_str);
             DataSet ds_Speciality = new DataSet();
@@ -43,7 +44,7 @@ namespace Vezeeta
 
             for (int intCount = 0; intCount < ds_Speciality.Tables[0].Rows.Count; intCount++)
             {
-                var val = ds_Speciality.Tables[0].Rows[intCount]["speciality"].ToString();
+                var val = ds_Speciality.Tables[0].Rows[intCount]["SPECIALIST"].ToString();
 
                 //check if it already exists
                 if (! cmb1.Items.Contains(val))
@@ -67,8 +68,8 @@ namespace Vezeeta
 
         private void cmb1_SelectedIndexChanged(object sender, EventArgs e)
         {
-            string connection_str = "Data Source=orcl; User Id=hr;Password=hr";
-            string command_str = "select * from doctor where speciality  =:spec";
+            string connection_str = "Data Source=orcl; User Id=scott;Password=tiger";
+            string command_str = "select * from doctor where SPECIALIST  =:spec";
 
             adapter = new OracleDataAdapter(command_str, connection_str);
             adapter.SelectCommand.Parameters.Add("spec", cmb1.SelectedItem.ToString());
