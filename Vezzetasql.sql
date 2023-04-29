@@ -1,5 +1,5 @@
-create or replace
-PROCEDURE GetReviews(Doc_name in varchar2, C_Reviews out sys_refcursor)
+
+create or replace PROCEDURE GetReviews(Doc_name in varchar2, C_Reviews out sys_refcursor)
 as
 begin
 open C_Reviews for
@@ -7,7 +7,6 @@ select re.commentt
 from doctor d, reviews re
 where d.user_name= doc_name and d.doctor_id=re.doctor_id;
 end;
-
 
 create or replace PROCEDURE
 GetMedicicnePrice
@@ -26,6 +25,7 @@ values('pandol','drug',25,'drug used for influenza and headachs',10)
 
 insert into medicine(medicine_name, typee, price, description, availabilityy)
 values('trimdflow','drug',12,'drug used for influenza and headachs',5)
+
 
 
 insert into doctor(Doctor_id,user_name,specialist) values(1,'ahmed','cardiolgy')
@@ -54,3 +54,35 @@ VALUES (4, 3,2, TO_TIMESTAMP('2023-06-10 13:53:29','YYYY-MM-DD HH24:MI:SS'));
 
 
 select booking_date from appointments ap,doctor d where d.user_name=:doc_name and d.doctor_id= ap.doctor_id and booking_date >= Sysdate
+
+
+
+UPDATE medicine
+SET expire_date = TO_DATE('2024-04-29', 'YYYY-MM-DD')
+WHERE medicine_name='trimdflow';
+
+UPDATE medicine
+SET expire_date = TO_DATE('2023-02-15', 'YYYY-MM-DD')
+WHERE medicine_name='pandol';
+
+
+insert into medicine(medicine_name, typee, price, expire_date, description, availabilityy)
+values('catafast','drug',15, TO_DATE('2023-06-25', 'YYYY-MM-DD'),' for headachs',10)
+
+insert into medicine(medicine_name, typee, price, expire_date, description, availabilityy)
+values('dove','comestics',35, TO_DATE('2022-06-25', 'YYYY-MM-DD'),' for curly hair',30)
+
+
+UPDATE medicine
+SET expire_date = TO_DATE('2024-06-25', 'YYYY-MM-DD')
+WHERE medicine_name='dove';
+
+
+
+commit;
+
+
+
+
+
+
